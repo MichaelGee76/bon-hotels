@@ -11,6 +11,7 @@
 
 html {
     font-family: Ubuntu;
+    scroll-behavior: smooth;
 }
 
 img {
@@ -21,6 +22,12 @@ a {
     text-decoration: none;
     font-size: clamp(0.8rem, 0.3545rem + 1.2727vw, 1.5rem);
     font-weight: 500;
+    cursor: pointer;
+}
+a:hover {
+    transition: 0.3s;
+    filter: brightness(1.2);
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -248,6 +255,11 @@ form * {
     display: flex;
     flex-direction: column;
     gap: 1.5vw;
+}
+
+.middle a:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
 }
 
 .right {
